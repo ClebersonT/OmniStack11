@@ -1,21 +1,17 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-class App extends Component {
-  render() {
+import React from 'react';
+import './global.css';
+//importar meu Component
+import Routes from './routes';
+//um componente no react é uma função que retorna html
+//jsx -> quando o html esta dentro do javascript
+//quando vou ter algum codigo que vai se repetir muitas vezes na nossa aplicação
+//o interessante é sempre separar esse codigo
+function App() {
+ 
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      //como não tem nehum conteudo, posso fechar a tag nela mesma />
+      <Routes/>
     );
-  }
 }
 
 export default App;
